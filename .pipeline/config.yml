@@ -9,10 +9,10 @@ stages:
   Integration Test:
     enabled: false
 steps:
-  integrationArtifactUpload:
-    packageId: "CICDTesting"
-    integrationFlowName: 'IS_Receive_SF_Platform_Event_COPY'
   integrationArtifactUpdateConfiguration:
     integrationFlowVersion: '1.0.0'
     parameterKey: 'My_Config_Param'
     parameterValue: 'CI_CD'
+  integrationArtifactUpload:
+    packageId: "CICDTesting"
+    integrationFlowName: 'IS_Receive_SF_Platform_Event_COPY'
